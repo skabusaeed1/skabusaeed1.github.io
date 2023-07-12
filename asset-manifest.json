@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.737e791a.css",
+    "main.js": "/static/js/main.a8096a87.js",
+    "static/media/mbayalang.png": "/static/media/mbayalang.c5e65ed85e66a1e9266f.png",
+    "static/media/overstack.png": "/static/media/overstack.5689a7d1ccc9a1b9b4f5.png",
+    "static/media/Trivago.png": "/static/media/Trivago.4d1dcb5ac8e403611074.png",
+    "static/media/portfolio.png": "/static/media/portfolio.4dd65ecebf9cc03a5a7e.png",
+    "static/media/Web.png": "/static/media/Web.72d21f89ed517f50867a.png",
+    "static/media/photo1.jpg": "/static/media/photo1.6c3c5f0d71f09e6d95c4.jpg",
+    "index.html": "/index.html",
+    "main.737e791a.css.map": "/static/css/main.737e791a.css.map",
+    "main.a8096a87.js.map": "/static/js/main.a8096a87.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.737e791a.css",
+    "static/js/main.a8096a87.js"
+  ]
+}
