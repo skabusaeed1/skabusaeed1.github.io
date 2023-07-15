@@ -5,6 +5,7 @@ import { Project } from './Project'
 import { Contacts } from './Contacts'
 import { Box, Divider } from '@chakra-ui/react'
 import { Intro } from './Intro'
+import GithubCalendarPage from './GithubCalendarPage'
 
 import "./Home.css"
 
@@ -26,10 +27,11 @@ export const Home = () => {
           <Skills />
          
           <Project /> 
-         
+
            <Stats/> 
        
           <Contacts /> 
+          
         </Box>
     )
 }

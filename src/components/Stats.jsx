@@ -1,12 +1,13 @@
 import { Box, Container, Heading } from '@chakra-ui/react';
 import React from 'react';
-import GitHubCalendarComponent from './GitHubCalendarComponent';
+import GithubCalendarPage from './GithubCalendarPage';
+
 
 export const Stats = () => {
     return (
         <Box id="statistics" >
             <Heading data-aos="fade-up" mt={"6%"} textAlign={'center'} fontSize={["2xl","3xl","4xl","4xl"]} > Github  <span  style={{ color: "rgb(241, 157, 16)" }}>Calender</span></Heading>
-            <GitHubCalendarComponent />
+            <GithubCalendarPage/>
             <Heading data-aos="fade-up" data-aos-duration="1000" textAlign={'center'}mt={"6%"} fontSize={["2xl","3xl","4xl","4xl"]}> Github  <span  style={{ color: "rgb(241, 157, 16)" }}>stats</span></Heading>
             <Box className='stat-container'>
                 <Box className='statone' data-aos="fade-up" >

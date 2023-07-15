@@ -93,12 +93,12 @@ export const Nav = () => {
         </Button>
        
       </Link>
-      {/* <a href="./resume\Abid_resume (3).pdf" download> resume</a> */}
-      <Box>
+      <Box borderRadius={"10px"}>
         <IconButton
           float="right"
           variant="outline"
           colorScheme="black"
+          border={"none"}
           {...buttonProps}
           display={["flex", "flex", "flex", "none", "none"]}
         >
@@ -108,8 +108,12 @@ export const Nav = () => {
           marginTop="40px"
           {...disclosureProps}
           bg="brand_secondary"
+          fontSize={"1.5rem"}
+          // w={"100px"}
           padding="5px"
-          borderRadius="5px"
+          textAlign={"center"}
+          borderRadius="10px"
+          border={"1px solid white"}
           display={["flex", "flex", "flex", "none", "none"]}
         >
          
@@ -221,8 +225,19 @@ export const Nav = () => {
                 Contact
                 <Divider />
               </Link>
+
+              <Link
+                onClick={handleClick}
+                width="100%"
+                color="brand"
+                borderRadius="5px"
+                cursor="pointer"
+              >
+                Resume
+                <Divider />
+              </Link>
          
-         <Button  className="nav-link resume"
+         {/* <Button  className="nav-link resume"
             onClick={handleClick}
             margin="auto"
             as={Link}
@@ -235,7 +250,7 @@ export const Nav = () => {
             id="resume-button-1"
           >
             Resume
-          </Button>
+          </Button> */}
         </VStack>
       </Box>
     </Container>
