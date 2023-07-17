@@ -1,9 +1,10 @@
 import React from 'react';
+import { Box, Button, Center, Flex, Heading,Image } from "@chakra-ui/react"
 
 export const Contacts = () => {
   const phoneNumber = '+91-9823931152';
   const email = 'shaikhabusaeed1@gmail.com';
-
+  const address = "Aurangabad, Maharashtra"
   return (
     <div id="contact" style={styles.container}>
       <h2 style={styles.contactTitle} data-aos="fade-up"
@@ -11,9 +12,11 @@ export const Contacts = () => {
       <div style={styles.contactDetails} id="contact-detail-div" data-aos="fade-up"
      data-aos-duration="1000">
         <p style={styles.contactInfo} id="contact-phone"  
-     ><i class="fa-solid fa-phone-volume fa-2xl"></i> <span style={{color:"white"}}> : {phoneNumber}</span> </p>
+     ><i class="fa-solid fa-phone-volume fa-2xl"></i> <span style={{color:"white",paddingLeft:"40px",marginLeft:"70px"}}>{phoneNumber}</span> </p>
         <p style={styles.contactInfo} id="contact-email"  
-     ><i class="fa-solid fa-envelope fa-2xl"></i>  <span style={{color:"white"}}> : {email}</span> </p>
+     ><i class="fa-solid fa-envelope fa-2xl"></i>  <span style={{color:"white"}}>  {email}</span> </p>
+     <p style={styles.contactInfo} id="contact-email">
+     <i class="fa-solid fa-location-dot fa-2xl"></i> <span style={{color:"white",paddingLeft:"30px"}}>  {address}</span> </p>
       </div>
       <div style={styles.socialMedia}data-aos="fade-up"
      data-aos-duration="1000" >
@@ -26,8 +29,6 @@ export const Contacts = () => {
      data-aos-duration="1000" id="contact-github" href="https://github.com/skabusaeed1"><i class="fa-brands fa-github fa-2xl"></i></a>
         </div>
       </div>
-      {/* <div> <p style={{fontWeight:"700"}}  
-    >Designed <span style={{color:"#03c8d7"}}>  &</span> develop by <span style={{color:"#03c8d7"}}>  Shaikh Abusaeed <span style={{color:"green"}}> ©</span>  </span> 2023</p> </div> */}
     </div>
   );
 };
@@ -45,7 +46,6 @@ const styles = {
     // border: '2px solid rgb(241, 157, 16)',
     fontSize: '30px',
     fontWeight: 'bold',
-    padding:"0px 80px",
     fontFamily: 'Arial, sans-serif',
     color: 'white',
   },
