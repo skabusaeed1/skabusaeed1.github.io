@@ -8,6 +8,20 @@ export const AboutMe = () => {
   const handleReadMoreClick = () => {
     setShowMoreDetails((prevState) => !prevState);
   }
+  const handlelinkedin=(event)=>{
+    event.preventDefault();
+  window.open(
+    "https://www.linkedin.com/in/abusaeed-ahmed-shaikh-440b04233/?originalSubdomain=in",
+    "_blank"
+  );
+  }
+  const handlegithub=(event)=>{
+    event.preventDefault();
+  window.open(
+    "https://github.com/skabusaeed1",
+    "_blank"
+  );
+  }
   return (
     <div>
       <Box data-aos="fade-up" data-aos-duration="1200" > <Text  fontSize={["25px", "25px", "30px", "5xl"]} fontWeight={"700"}textAlign={"center"}>About <span  style={{ color: "rgb(241, 157, 16)" }}>me</span></Text> </Box>
@@ -26,9 +40,9 @@ export const AboutMe = () => {
               to try some new things for optimization.</Text></Box>
         <div data-aos="fade-up"  data-aos-duration="1000"style={{display:"flex",gap:"20px",width:"100%"}} >
           <a   
-     data-aos-duration="1000" id="contact-linkedin1" href="https://www.linkedin.com/in/abusaeed-ahmed-shaikh-440b04233/?originalSubdomain=in"><i class="fa-brands fa-linkedin  fa-2xl"></i></a>
+     data-aos-duration="1000" id="contact-linkedin1" onClick={(event)=>handlelinkedin(event)}><i class="fa-brands fa-linkedin  fa-2xl"></i></a>
           <a   
-     data-aos-duration="1000" id="contact-github1" href="https://github.com/skabusaeed1"><i class="fa-brands fa-github fa-2xl"></i></a>
+     data-aos-duration="1000" id="contact-github1" onClick={(event)=>handlegithub(event)}><i class="fa-brands fa-github fa-2xl"></i></a>
         </div>
         {/* <Box  data-aos="fade-up-right" data-aos-duration="500"><Button  fontSize={"large"} size={["sm", "md", "lg", "lg"]} color={"white"} _hover={{ bg: "gray.900", color: "rgb(241, 157, 16)", borderRadius: "10px" }} bg={"rgb(241, 157, 16)"} onClick={handleReadMoreClick}>{showMoreDetails ? "Read less" : "Read more"}</Button></Box> */}
         {/* {showMoreDetails && <Box className='more-detail' mt={"30px"} >

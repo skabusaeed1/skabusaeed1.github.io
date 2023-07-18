@@ -38,7 +38,7 @@ export const Intro = () => {
                         </Text></Box> */}
 
                     <Text data-aos="fade-up" data-aos-duration="1000" mt={"30px"} >
-                        <Button size={["sm", "sm", "lg", "lg"]} id="resume-button-2" onClick={handleclick}
+                        <Button size={["sm", "sm", "lg", "lg"]} id="resume-button-2" onClick={(event)=>handleclick(event)}
                         as={Link}
                         target="_blank"
                         download={true}

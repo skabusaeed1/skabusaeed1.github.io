@@ -24,9 +24,9 @@ export const Contacts = () => {
      data-aos-duration="1000">Social Media</p> */}
         <div style={styles.socialMediaLinks} > 
           <a style={styles.socialMediaLink}  
-     data-aos-duration="1000" id="contact-linkedin" href="https://www.linkedin.com/in/abusaeed-ahmed-shaikh-440b04233/?originalSubdomain=in"><i class="fa-brands fa-linkedin  fa-2xl"></i></a>
+     data-aos-duration="1000" id="contact-linkedin" href="https://www.linkedin.com/in/abusaeed-ahmed-shaikh-440b04233/?originalSubdomain=in" target='blank'><i class="fa-brands fa-linkedin  fa-2xl"></i></a>
           <a style={styles.socialMediaLink}  
-     data-aos-duration="1000" id="contact-github" href="https://github.com/skabusaeed1"><i class="fa-brands fa-github fa-2xl"></i></a>
+     data-aos-duration="1000" id="contact-github" href="https://github.com/skabusaeed1" target='blank'><i class="fa-brands fa-github fa-2xl"></i></a>
         </div>
       </div>
     </div>
@@ -44,7 +44,7 @@ const styles = {
   },
   contactTitle: {
     // border: '2px solid rgb(241, 157, 16)',
-    fontSize: '30px',
+    fontSize: '2.5rem',
     fontWeight: 'bold',
     fontFamily: 'Arial, sans-serif',
     color: 'white',

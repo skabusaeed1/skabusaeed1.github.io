@@ -31,8 +31,8 @@ export const ProjectCard = ({name,desc,avatar,link,github,tech }) => {
 
       <CardFooter justify='space-between'  sx={{ '& > button': { minW: '136px', }, }}   >
         <Flex justifyContent={"space-between"} padding={"0px 20px"} w={"100%"}>
-          <Button id='card_soco' bg="rgb(241, 157, 16)" size={["sm", "sm", "md", "md"]}>   <Link class="project-github-link" href={github}> <i class="fa-brands fa-github fa-2xl"></i> Github </Link> </Button>
-          <Button id='card_soco'  bg="rgb(241, 157, 16)" size={["sm", "sm", "md","md"]}> <Link class="project-deployed-link" href={link}><i class="fa-solid fa-eye fa-2xl"></i> Live </Link></Button>
+          <Button id='card_soco' bg="rgb(241, 157, 16)" size={["sm", "sm", "md", "md"]}>   <Link class="project-github-link" href={github} target='blank'> <i class="fa-brands fa-github fa-2xl"></i> Github </Link> </Button>
+          <Button id='card_soco'  bg="rgb(241, 157, 16)" size={["sm", "sm", "md","md"]}> <Link class="project-deployed-link" href={link} target='blank'><i class="fa-solid fa-eye fa-2xl"></i> Live </Link></Button>
         </Flex>
       </CardFooter>
 

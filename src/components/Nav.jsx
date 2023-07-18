@@ -86,7 +86,7 @@ export const Nav = () => {
           target="_blank"  
            _hover={{bg: "rgb(241, 157, 16)" }} 
            download={true}
-          onClick={handleClick}
+          onClick={(event)=>handleClick(event)}
         >
           {/* <DownloadIcon marginRight="5px" /> */}
           Resume
@@ -227,7 +227,8 @@ export const Nav = () => {
               </Link>
 
               <Link
-                onClick={handleClick}
+                onClick={(event)=>handleClick(event)}
+                textDecoration={"none"}
                 width="100%"
                 color="brand"
                 borderRadius="5px"
